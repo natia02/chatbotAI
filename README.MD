@@ -67,6 +67,97 @@ Optimization techniques such as Stochastic Gradient Descent (SGD) with learning 
   
 - **testing.py**: Implements the chatbot's response mechanism, utilizing the trained model to classify intents and generate appropriate responses.
 
+# Project Contribution Breakdown
+
+### `main.py`
+
+#### **Anna:**
+- GUI setup and layout
+  - `ChatBot.__init__`
+  - `ChatBot.main_window`
+  - `ChatBot.add_bot`
+  - `ChatBot.add_train`
+
+#### **Nika:**
+- Chat functionality
+  - `ChatBot.on_enter`
+  - `ChatBot.my_msg`
+  - `ChatBot.bot_response`
+
+#### **Natia:**
+- Training handler
+  - `ChatBot.on_train`
+  - Integrate `Training` class
+
+#### **Nato:**
+- Integration and debugging
+  - Ensure smooth interaction of all components
+  - Assist with training and testing integration
+
+### `training.py`
+
+#### **Anna:**
+- Initial setup
+  - `Training.__init__`
+
+#### **Nika:**
+- Data preprocessing
+  - Tokenization and lemmatization in `Training.build`
+
+#### **Natia:**
+- Model training
+  - Main logic in `Training.build`
+  - Save the model and training data
+
+#### **Nato:**
+- Data handling
+  - `Training.load_intents`
+  - `Training.save_intents`
+  - JSON manipulation for intents
+
+### `testing.py`
+
+#### **Anna:**
+- Initial setup
+  - `Testing.__init__`
+  - Load model and data
+
+#### **Nika:**
+- Sentence processing
+  - `Testing.clean_up_sentence`
+
+#### **Natia:**
+- Input vectorization
+  - `Testing.wordvector`
+
+#### **Nato:**
+- Classification and response generation
+  - `Testing.classify`
+  - `Testing.response`
+
+### Summary
+
+#### **Anna:**
+- **`main.py`:** GUI setup
+- **`training.py`:** Initial setup
+- **`testing.py`:** Initial setup
+
+#### **Nika:**
+- **`main.py`:** Chat functionality
+- **`training.py`:** Data preprocessing
+- **`testing.py`:** Sentence processing
+
+#### **Natia:**
+- **`main.py`:** Training handler
+- **`training.py`:** Model training
+- **`testing.py`:** Input vectorization
+
+#### **Nato:**
+- **`main.py`:** Integration and debugging
+- **`training.py`:** Data handling
+- **`testing.py`:** Classification and response generation
+
+
 ## 5. Installation and Setup
 
 To run the ChatBot application:
