@@ -15,7 +15,7 @@ class Testing:
     def __init__(self):
         try:
             self.intents = json.loads(open('data/intents.json').read())
-            data = pickle.load(open("daata/training_data", "rb"))
+            data = pickle.load(open("data/training_data", "rb"))
             self.words = data['words']
             self.classes = data['classes']
             self.model = load_model('data/chatbot_model.h5')

@@ -67,6 +67,24 @@ Optimization techniques such as Stochastic Gradient Descent (SGD) with learning 
   
 - **testing.py**: Implements the chatbot's response mechanism, utilizing the trained model to classify intents and generate appropriate responses.
 
+## 5. Installation and Setup
+
+To run the ChatBot application:
+
+1. Install Python (if not already installed) from [python.org](https://www.python.org/).
+
+2. Install required Python packages:
+    ```bash
+    pip install numpy nltk tensorflow keras
+    ```
+
+3. Run the application:
+    ```bash
+    python chatbot_GUI.py
+    ```
+
+
+
 ## Usage
 1. **Running the ChatBot**: Execute `chatbot_gui.py` to launch the graphical interface.
    
