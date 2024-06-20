@@ -1,0 +1,146 @@
+{
+ "intents": [
+  {
+   "tag": "greeting",
+   "patterns": [
+    "Hi",
+    "Hello",
+    "Hey",
+    "Greetings",
+    "Good morning",
+    "Good afternoon",
+    "Good evening"
+   ],
+   "responses": [
+    "Hello! How can I assist you today?",
+    "Hi there! What can I help you with?",
+    "Hey! It's great to meet you. How can I be of service?",
+    "Greetings! I'm ready to help you with any questions or tasks you might have."
+   ]
+  },
+  {
+   "tag": "goodbye",
+   "patterns": [
+    "Bye",
+    "See you later",
+    "Goodbye",
+    "Have a nice day",
+    "Talk to you later",
+    "Take care"
+   ],
+   "responses": [
+    "Goodbye! Have a wonderful day.",
+    "Take care! Feel free to reach out if you need anything else.",
+    "See you later! It was a pleasure chatting with you.",
+    "Have a nice day! Bye for now."
+   ]
+  },
+  {
+   "tag": "thanks",
+   "patterns": [
+    "Thanks",
+    "Thank you",
+    "That's helpful",
+    "Thanks for your help",
+    "Appreciate your assistance"
+   ],
+   "responses": [
+    "You're very welcome!",
+    "I'm glad I could help. Don't hesitate to ask if you need anything else.",
+    "It was my pleasure to assist you. Thank you for your kind words."
+   ]
+  },
+  {
+   "tag": "about",
+   "patterns": [
+    "What are you?",
+    "Who are you?",
+    "Tell me about yourself",
+    "What can you do?"
+   ],
+   "responses": [
+    "I'm an AI assistant created to help with a variety of tasks. I have knowledge spanning different domains and can assist with information lookup, analysis, writing, coding, and more.",
+    "I'm an artificial intelligence designed to be a helpful virtual companion. My capabilities include answering questions, providing information, and assisting with various tasks like writing, research, and problem-solving.",
+    "I'm a conversational AI that can engage in natural language interactions. I have a broad knowledge base and can assist you with everything from general inquiries to specific tasks like writing, coding, or data analysis."
+   ]
+  },
+  {
+   "tag": "capabilities",
+   "patterns": [
+    "What can you do for me?",
+    "How can you help me?",
+    "What are your capabilities?",
+    "What kind of tasks can you handle?"
+   ],
+   "responses": [
+    "I can assist you with a wide range of tasks, including research and information gathering, writing and editing, coding and programming, data analysis, math problems, and general knowledge questions. Just let me know what you need help with, and I'll do my best to assist you.",
+    "My capabilities are quite diverse. I can help with writing tasks like essays, articles, or reports. I can also help with coding and programming in various languages. Additionally, I can assist with data analysis, math problems, and general knowledge queries across various domains.",
+    "I'm capable of handling a variety of tasks, such as information lookup and research, writing and editing documents, coding and programming, data analysis and visualization, solving math problems, and answering general knowledge questions. Feel free to ask me about any task, and I'll let you know if I can help."
+   ]
+  },
+  {
+   "tag": "weather",
+   "patterns": [
+    "What's the weather like today?",
+    "Do I need an umbrella today?",
+    "How's the weather forecast for this week?",
+    "What's the temperature outside?"
+   ],
+   "responses": [
+    "Unfortunately, I don't have access to real-time weather data or forecasts. As an AI assistant without direct internet access, I can't provide accurate weather information for specific locations or dates.",
+    "I'm sorry, but I don't have the capability to check or report on current weather conditions or forecasts. As an AI, I don't have direct access to weather data sources.",
+    "I apologize, but I can't provide weather information or forecasts. My knowledge is limited to what was available during my training, which doesn't include up-to-date weather data."
+   ],
+   "context_set": "weather_context"
+  },
+  {
+   "tag": "weather_context",
+   "patterns": [],
+   "responses": [
+    "As an AI system without direct internet access, I don't have the ability to fetch real-time weather data or forecasts. However, I'd be happy to assist you with other tasks like research, writing, or analysis.",
+    "Unfortunately, I can't provide weather information or forecasts since I don't have access to live weather data sources. But I'm still here to help with any other questions or tasks you might have.",
+    "I apologize for not being able to check the weather for you. As an AI, I have limitations in accessing certain types of data. Let me know if there are other ways I can assist you instead."
+   ],
+   "context_filter": "weather_context"
+  },
+  {
+   "tag": "joke",
+   "patterns": [
+    "Tell me a joke",
+    "Make me laugh",
+    "Do you know any jokes?",
+    "Can you tell me a funny joke?"
+   ],
+   "responses": [
+    "Why don't scientists trust atoms? Because they make up everything!",
+    "What do you call a bear with no teeth? A gummy bear!",
+    "Why was the math book sad? Because it had too many problems!",
+    "Why can't a bicycle stand up by itself? Because it's two-tired!"
+   ]
+  },
+  {
+   "tag": "creators",
+   "patterns": [
+    "who created you?",
+    "who wrote your code?"
+   ],
+   "responses": [
+    "Natia, Anna, Nato, Nika.",
+    "Some clever KIU students"
+   ],
+   "context": ""
+  },
+  {
+   "tag": "math",
+   "patterns": [
+    "what is 2+2",
+    "what is 2*2"
+   ],
+   "responses": [
+    "4",
+    ""
+   ],
+   "context": ""
+  }
+ ]
+}
